@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IP Security Architecture Simulator</title>
+<meta name="description" content="Educational simulator for IPsec: Authentication Header, ESP, transport and tunnel mode, attacks and anti-replay.">
+</head>
+<body>
+<header class="topbar"><div class="topbar-in">
+  <div class="brand"><div class="brand-mark" id="brand-mark"></div><div><h1>IP Security Architecture Simulator</h1><p>Network Protocols and Algorithms · mini project</p></div></div>
+  <div class="proto-chips"><b>AH</b><span class="dot">•</span><b>ESP</b><span class="dot">•</span><b>Transport</b><span class="dot">•</span><b>Tunnel</b><span class="dot">•</span><b>Secure Packet Transmission</b></div>
+  <div class="topbar-r"><span class="badge-edu">Educational simulation</span><button class="btn sm" data-action="demo-open" id="btn-demo"></button></div>
+</div></header>
+<main class="layout" id="app">
+  <section class="card a-cfg" id="cfg"></section>
+  <section class="card a-topo" id="topo-card"></section>
+  <section class="card a-status" id="status"></section>
+  <section class="card a-insp" id="insp"></section>
+  <div class="a-sa" style="display:grid;gap:16px;align-content:start"><section class="card" id="sa"></section><section class="card" id="replay"></section></div>
+  <div class="a-result" style="display:grid;gap:16px;align-content:start"><section class="card" id="result"></section></div>
+  <section class="card a-log" id="log"></section>
+  <section class="card a-est" id="est"></section>
+  <section class="card a-cmp" id="cmp"></section>
+  <section class="card a-mtx" id="mtx"></section>
+</main>
+<footer><span><b>Educational simulation.</b> Keys are generated per session and the SA establishment is a simplified model, not IKEv2. Not for protecting real traffic.</span><span>Based on RFC 4301, 4302, 4303 and 4868.</span></footer>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
